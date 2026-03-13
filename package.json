@@ -1,0 +1,29 @@
+{
+  "name": "abyss-crawler",
+  "version": "1.0.0",
+  "description": "Ultra-fast, adaptive and zero-browser footprint web crawler for Node.js",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "node examples/basic.js"
+  },
+  "keywords": [
+    "crawler",
+    "spider",
+    "scraper",
+    "adaptive",
+    "fetch",
+    "cheerio",
+    "fast"
+  ],
+  "author": "AuYahyire",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^1.0.0",
+    "log-update": "^6.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AuYahyire/abyss-crawler.git"
+  }
+}
