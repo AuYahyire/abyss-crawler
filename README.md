@@ -15,16 +15,16 @@ Unlike standard crawling libraries, **Abyss does not use Puppeteer or Playwright
 
 ## 📦 Installation
 
-\`\`\`bash
+```bash
 npm install abyss-crawler
-\`\`\`
+```
 *(Requires Node.js 18+)*
 
 ## 🛠️ Usage
 
 ### Basic Example (Data Scraping)
 
-\`\`\`javascript
+```javascript
 import Abyss from 'abyss-crawler';
 
 const crawler = new Abyss({
@@ -40,13 +40,13 @@ crawler.onPage(async ({ url, html, $ }) => {
 });
 
 crawler.start('https://example.com');
-\`\`\`
+```
 
 ### Advanced Example (AI Knowledge Base - Strict Limits)
 
 When sending scraped data to OpenAI or ElevenLabs APIs, you don't want adaptive speed; you want **strict** low concurrency to avoid API bans.
 
-\`\`\`javascript
+```javascript
 const crawler = new Abyss({
     maxConcurrency: 4,  // Strict limit for ElevenLabs/OpenAI 
     adaptive: false,    // Turn off auto-acceleration
@@ -64,7 +64,7 @@ crawler.onPage(async ({ url, html, $ }) => {
         if (error.status === 429) throw new Error('HTTP_429'); 
     }
 });
-\`\`\`
+```
 
 ## ⚙️ Configuration Options
 
