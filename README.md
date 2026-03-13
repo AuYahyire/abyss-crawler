@@ -38,7 +38,7 @@ Unlike standard crawling libraries, **Abyss does not use Puppeteer or Playwright
 ## 📦 Installation
 
 ```bash
-npm install abyss-crawler
+npm install https://github.com/AuYahyire/abyss-crawler.git
 ```
 *(Requires Node.js 18+)*
 
