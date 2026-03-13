@@ -24,9 +24,6 @@ Abyss comes with a built-in, non-scrolling terminal UI that updates at 15 FPS, a
 🌐 Fetching:       https://example.com/products/electronics/smartphones...
 ```
 
-> **Pro Tip:** If you take a real screenshot, you can replace this block with:
-> `![Abyss Dashboard](path/to/your/screenshot.png)`
-
 ## 🚀 Why Abyss?
 
 Unlike standard crawling libraries, **Abyss does not use Puppeteer or Playwright**. It relies purely on the native Node.js 18+ `fetch` API with `keep-alive` TCP connections. This results in **zero RAM bloating** and instant network responses.
