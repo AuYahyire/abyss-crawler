@@ -2,6 +2,31 @@
 
 An ultra-fast, zero-browser-footprint web crawler for Node.js, designed with a built-in Adaptive Latency Engine to prevent server overload and a stunning CLI dashboard.
 
+## 📊 Live Dashboard Preview
+
+Abyss comes with a built-in, non-scrolling terminal UI that updates at 15 FPS, allowing you to monitor the health of your crawl in real-time.
+
+```text
+🚀 Starting Abyss Crawler at: https://example.com
+
+📡 Target:         https://example.com
+🛑 Robots.txt:     33 rules | Delay: No
+--------------------------------------------------
+📈 Server Health:  🟢 Fast (Accelerating)
+⚡ Active Threads: 24 / 40 (Max: 40)
+⏱️  Avg Latency:    142ms
+--------------------------------------------------
+📊 Processed:      1248
+🔍 Discovered:     3102
+⏳ Queue (BFS):    1854
+❌ Errors:         2
+--------------------------------------------------
+🌐 Fetching:       https://example.com/products/electronics/smartphones...
+```
+
+> **Pro Tip:** If you take a real screenshot, you can replace this block with:
+> `![Abyss Dashboard](path/to/your/screenshot.png)`
+
 ## 🚀 Why Abyss?
 
 Unlike standard crawling libraries, **Abyss does not use Puppeteer or Playwright**. It relies purely on the native Node.js 18+ `fetch` API with `keep-alive` TCP connections. This results in **zero RAM bloating** and instant network responses.
